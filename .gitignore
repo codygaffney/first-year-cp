@@ -1,0 +1,17 @@
+/Lab1/nbproject/private
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+*.class
+
+*.jar
+*.war
+*.ear
+
+/Lab2/nbproject/private/
+/Lab3/nbproject/private/

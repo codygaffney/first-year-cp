@@ -159,9 +159,9 @@ public class Lab1 {
         double dx = 7, dy = 4.6;
         
         double distAB, distBC, distCD, totalDist;
-        distAB = Math.sqrt(((bx-ax)*(bx-ax)) + ((by-ay)*(by-ay)));
-        distBC = Math.sqrt(((cx-bx)*(cx-bx)) + ((cy-by)*(cy-by)));
-        distCD = Math.sqrt(((dx-cx)*(dx-cx)) + ((dy-cy)*(dy-cy)));
+        distAB = Math.sqrt(Math.pow((bx-ax), 2) + Math.pow((by-ay), 2));
+        distBC = Math.sqrt(Math.pow((cx-bx), 2) + Math.pow((cy-by), 2));
+        distCD = Math.sqrt(Math.pow((dx-cx), 2) + Math.pow((dy-cy), 2));
         
         totalDist = distAB + distBC + distCD;
         
