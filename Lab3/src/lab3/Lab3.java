@@ -54,6 +54,34 @@ public class Lab3 {
         System.out.println("Please enter a single alphabetic character: ");
         String ch = sc.next();
         
+        String[] consonants = {"b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z"};
+        String[] vowels = {"a","e","i","o","u"};
+        boolean isConsonant = false;
+        boolean isVowel = false;
+        
+        for(int i = 0; i < consonants.length; i++){
+            if(ch.equalsIgnoreCase(consonants[i])){
+                isConsonant = true;
+            }
+        }
+        
+        for(int i = 0; i < vowels.length; i++){
+            if(ch.equalsIgnoreCase(vowels[i])){
+                isVowel = true;
+            }
+        }
+        
+        if(isConsonant == true){
+            System.out.println(ch + " is a consonant.");
+        }
+        else if(isVowel == true){
+            System.out.println(ch + " is a vowel.");
+        }
+        else{
+            System.out.println(ch + " is not an alphabetic character.");
+        }
+        
+        
 
     }
 
