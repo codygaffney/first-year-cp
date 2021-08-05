@@ -78,17 +78,22 @@ public class Lab2 {
         
         double diameter1, height1, volume1, surfaceArea1, radius1;
         
+        
         System.out.println("Question 1");
+        
         
         System.out.println("Enter the diameter of the cone: ");
         diameter1 = sc1.nextInt();
         
+        
         System.out.println("Enter the height of the cone: ");
         height1 = sc1.nextInt();
+        
         
         radius1 = diameter1 / 2;
         volume1 = Math.PI * Math.pow( 2 , radius1) * (height1 / 3);
         surfaceArea1 = Math.PI * radius1 * (radius1 + Math.sqrt( Math.pow( height1, 2 )+Math.pow( radius1, 2 )));
+        
         
         System.out.println("The volume of the cone is " + String.format("%.2f", volume1) + ". The surface area of the cone is " + String.format("%.2f", surfaceArea1));
     }
@@ -105,9 +110,12 @@ public class Lab2 {
         
         Scanner sc2 = new Scanner(System.in);
         
+        
         double Ax, Ay, Bx, By, Cx, Cy, distAB, distBC, distCA, angleABC;
         
+        
         System.out.println("\nQuestion 2");
+        
         
         System.out.println("Please enter a point for Ax: ");
         Ax = sc2.nextDouble();
@@ -122,11 +130,14 @@ public class Lab2 {
         System.out.println("Please enter a point for Cy: ");
         Cy = sc2.nextDouble();
         
+        
         distAB = Math.sqrt(Math.pow((Bx-Ax), 2) + Math.pow((By-Ay), 2));
         distBC = Math.sqrt(Math.pow((Cx-Bx), 2) + Math.pow((Cy-By), 2));
         distCA = Math.sqrt(Math.pow((Ax-Cx), 2) + Math.pow((Ay-Cy), 2));
         
+        
         angleABC = Math.toDegrees(Math.acos(((Math.pow( distAB, 2 ))+(Math.pow( distBC, 2 )) -(Math.pow( distCA, 2 ))) / (2 * distAB * distBC)));
+        
         
         System.out.println("The angle at B is: "+ angleABC);
         
@@ -149,9 +160,11 @@ public class Lab2 {
         String sec = "", min = "", hr = "";
         ctm = (int) System.currentTimeMillis();
         
+        
         second = (ctm / 1000 / 60) % 60;
         minute = (ctm / 1000 / 60 / 60) % 60;
         hour = (ctm / 1000 / 60 / 60 / 12) % 12 ;
+        
         
         if(second < 10){
             sec = "0" + second;
@@ -172,6 +185,7 @@ public class Lab2 {
             hr = "" + hour;
         }
         
+        
         System.out.println("\nQuestion 3");
         System.out.println("Time: " + hr + ":" + min + ":" + sec);
         
@@ -186,9 +200,11 @@ public class Lab2 {
         
         Scanner sc = new Scanner(System.in);
         
+        
         System.out.println("\nQuestion 4");
         System.out.println("Enter an integer: ");
         int num = sc.nextInt();
+        
         
         if(num < 0){
             System.out.print(num + " is giving negative vibes");
@@ -197,6 +213,7 @@ public class Lab2 {
             System.out.println(num + " is all about those positive vibes");
         }
     }
+    
     
     public static void question5(){
         
@@ -212,15 +229,19 @@ public class Lab2 {
         Scanner sc = new Scanner(System.in);
         double weight, height;
         
+        
         System.out.println("\nQuestion 5");
         System.out.println("Enter your weight (kg): ");
         weight = sc.nextDouble();
         System.out.println("Enter your height (cm): ");
         height = sc.nextDouble();
         
+        
         double bmi = (weight / height / height) * 10000;
         
+        
         System.out.println("Your BMI is: "+ String.format("%.2f", bmi));
+        
         
         if(bmi < 18.5){
             System.out.println("You are underweight.");
@@ -263,13 +284,16 @@ public class Lab2 {
         Scanner sc = new Scanner(System.in);
         double tax = 0;
         
+        
         System.out.println("Please select (1-3):\n1.Single\n2.Single with Child\n3.Married");
         String choice = sc.next();
+        
         
         System.out.println("How much have yu earned this month?");
         double salary = sc.nextDouble();
         
-        if(choice == "1"){
+        
+        if(choice.equals("1")){
             if(salary > 35300/12){
                 tax += ((salary - (35300/12)) * 0.4);
                 tax += (35300/12) * 0.2;
@@ -277,8 +301,9 @@ public class Lab2 {
             else{
                 tax += salary * 0.2;
             }
+            System.out.println("You need to pay " + tax + "tax.");
         }
-        else if(choice == "2"){
+        else if(choice.equals("2")){
             if(salary > 39300/12){
                 tax += ((salary - (39300/12)) * 0.4);
                 tax += (39300/12) * 0.2;
@@ -286,6 +311,20 @@ public class Lab2 {
             else{
                 tax += salary * 0.2;
             }
+            System.out.println("You need to pay " + tax + "tax.");
+        }
+        else if(choice.equals("3")){
+            if(salary > 44300/12){
+                tax += ((salary - (44300/12)) * 0.4);
+                tax += (44300/12) * 0.2;
+            }
+            else{
+                tax += salary * 0.2;
+            }
+            System.out.println("You need to pay " + tax + "tax.");
+        }
+        else{
+            System.out.println("Invalid choice.");
         }
     }
     
