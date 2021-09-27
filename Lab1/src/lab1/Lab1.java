@@ -102,7 +102,7 @@ public class Lab1 {
          * 5.
          * Write a single Java program to calculate the following: 
          * a) The volume of a cylindrical tin of soup of diameter 7cm and 
-         * height 10½cm  
+         * height 10Â½cm  
          * b) The area of a rectangular wrapper to cover the soup tin of part (A)  
          * c) The total surface area of cling film required to completely wrap 
          * the tin of soup from (A) 
@@ -141,14 +141,14 @@ public class Lab1 {
         /**
          * 6.
          * There are four points A, B, C and D.  
-         * A’s coordinates are x=-5.5 y=2. 
-         * B’s coordinates are x=-3 y=-2.2. 
-         * C’s coordinates are x=1 y=2. 
-         * D’s coordinates are x=7 y=4.6. 
+         * Aâ€™s coordinates are x=-5.5 y=2. 
+         * Bâ€™s coordinates are x=-3 y=-2.2. 
+         * Câ€™s coordinates are x=1 y=2. 
+         * Dâ€™s coordinates are x=7 y=4.6. 
          * 
          * Write a program that calculates the sum of the following distances: 
          * A to B, B to C, C to D. 
-         * Ideally you shouldn’t have to know whether a coordinate is negative 
+         * Ideally you shouldnâ€™t have to know whether a coordinate is negative 
          * or whether one coordinate has a smaller value than another for your 
          * program to work correctly. 
          */

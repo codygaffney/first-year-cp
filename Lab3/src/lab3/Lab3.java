@@ -1,10 +1,15 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package lab3;
 
 import java.util.Scanner;
 
 /**
  *
- * @author Cody Gaffney
+ * @author Tomas
  */
 public class Lab3 {
 
@@ -12,14 +17,14 @@ public class Lab3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-
+        
         Scanner sc = new Scanner(System.in);
 
         String cont = "y";
 
         do {
 
-            System.out.println("What question do you want to run?");
+            System.out.println("What question do you want to run? (1-5)");
             String choice = sc.next();
             
             if(choice.equalsIgnoreCase("1")){
@@ -38,8 +43,16 @@ public class Lab3 {
                 question5();
             }
             else{
-                System.out.println("Do you want to continue?");
+                System.out.println("Not a valid input");
             }
+            
+            do{
+                    System.out.println("Do you want to continue? (y/n)");
+                    cont = sc.next();
+                    if(!cont.equalsIgnoreCase("y") && !cont.equalsIgnoreCase("n")){
+                        System.out.println("Not a valid input. Please enter 'y' or 'n'.");
+                    }
+                }while(!cont.equalsIgnoreCase("y") && !cont.equalsIgnoreCase("n"));
 
         } while (cont.equalsIgnoreCase("y"));
 
@@ -86,6 +99,8 @@ public class Lab3 {
     }
 
     public static void question2() {
+        
+        
 
     }
 
@@ -100,5 +115,5 @@ public class Lab3 {
     public static void question5() {
 
     }
-
+    
 }

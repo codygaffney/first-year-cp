@@ -219,7 +219,7 @@ public class Lab2 {
         
         /**
          * 5.
-         * Write a program that calculates a person’s BMI. The program asks 
+         * Write a program that calculates a personâ€™s BMI. The program asks 
          * the user to enter their weight in kg and height in cm and then 
          * displays the calculated BMI as well as which weight class they 
          * belong to. Below 18.5 is underweight, 18.5 to 24.9 is normal, 
@@ -276,8 +276,8 @@ public class Lab2 {
          * to pay. If the user earned less than their tax band, they just 
          * pay 20%. If they earned more than the tax band, the amount 
          * exceeding the tax band is taxed at 40%. The tax bands depend on 
-         * the person’s status: Single €35.300, Single with child €39.300, 
-         * Married €44.300. Note that the tax bands are given as they apply 
+         * the personâ€™s status: Single â‚¬35.300, Single with child â‚¬39.300, 
+         * Married â‚¬44.300. Note that the tax bands are given as they apply 
          * to annual income, so must be divided by 12. 
          */
         
@@ -329,29 +329,3 @@ public class Lab2 {
     }
     
 }
-
-
-
-/**
- *                                                  
-          (/(                                     
-          %  /#                                  
-          &    %(// ,/  /    % #/*                
-           &    %%%///%%%((%%%#/                  
- %//////   &&&#/#%%%%%%%%%%%%%%%%(,/////////*..   
- &%%%//////(/%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%(*  
-   %%%%////%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%&(     
-    %%%(/%%%%%%//%%%%%%%%%%%%%%%%%%%%%&&&(        
-     @//%%%%%%////%%%%%%%%%%%%((%%%%%%.           
-     //%%%%.%%%////%%%%%%%@,///(%%%%%%//////////# 
-     /%%%%%  .%%%%%%%%%%#/////(%%%%%%%%%%%%%%%%%%%
-    ./%%%%%%*   .,(%%%%%%%%%%%%&%%%%%%%%%%%%%# %  
-     /%%%%%%%% *   /       ,  %%%%%%&&&&@.        
-    %%%&%%%%%%%%%%#    ,  #%%%%%%%%&              
-   &%%%&&&&%%%%%%%%%%%%%%%%%%%%%%%&               
-    &&%&&&&&&&&%%%%%%%%%%%%%%%%%&                 
-      *&&&&&&&&&&&&&&&&&%%%%%%%%%,                
-        /&     #&&&&&&&&&%%%%%%%%                 
-                  &&%  /&&&&&&&%                  
-                         &&&&&              
- */
